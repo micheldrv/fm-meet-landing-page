@@ -11,10 +11,10 @@ export default function MainContent() {
       <div className="main-content">
         <NumberDisplay value="01" />
         <div className="main-images">
-          <img src={womanInVideocall} />
-          <img src={womenVideochatting} />
-          <img src={menInMeeting} />
-          <img src={manTexting} />
+          <img src={womanInVideocall} alt="woman in videocall" />
+          <img src={womenVideochatting} alt="women videochatting" />
+          <img src={menInMeeting} alt="men in meeting" />
+          <img src={manTexting} alt="max texting" />
         </div>
         <div className="main-text-content">
           <div className="main-title">

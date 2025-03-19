@@ -9,11 +9,11 @@ export default function Hero() {
     <>
       <div className="hero">
         <div className="hero-image">
-          <img src={hero} alt="" />
+          <img src={hero} alt="faces" />
         </div>
         <div className="hero-content-grid">
           <div className="hero-image-left">
-            <img src={heroLeft} alt="" />
+            <img src={heroLeft} alt="faces" />
           </div>
           <div className="hero-content">
             <h1>
@@ -31,7 +31,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="hero-image-right">
-            <img src={heroRight} alt="" />
+            <img src={heroRight} alt="faces" />
           </div>
         </div>
       </div>
