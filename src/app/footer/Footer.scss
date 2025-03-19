@@ -30,7 +30,7 @@ footer {
     opacity: 0.2;
     mix-blend-mode: multiply;
 
-    background-image: url("src/assets/mobile/image-footer.jpg");
+    background-image: url("../../assets/mobile/image-footer.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -51,7 +51,7 @@ footer {
 
 @media (min-width: $tablet-threshold) {
   .footer-content::after {
-    background-image: url("src/assets/tablet/image-footer.jpg");
+    background-image: url("../../assets/tablet/image-footer.jpg");
   }
 }
 
@@ -60,7 +60,7 @@ footer {
     padding: $spacing-1400 $spacing-1000;
 
     &::after {
-      background-image: url("src/assets/desktop/image-footer.jpg");
+      background-image: url("../../assets/desktop/image-footer.jpg");
     }
   }
 

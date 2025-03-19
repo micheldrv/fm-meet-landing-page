@@ -1,5 +1,9 @@
 import "./MainContent.scss";
 import NumberDisplay from "../../shared/number-display/NumberDisplay";
+import womanInVideocall from "../../assets/desktop/image-woman-in-videocall.jpg";
+import womenVideochatting from "../../assets/desktop/image-women-videochatting.jpg";
+import menInMeeting from "../../assets/desktop/image-men-in-meeting.jpg";
+import manTexting from "../../assets/desktop/image-man-texting.jpg";
 
 export default function MainContent() {
   return (
@@ -7,10 +11,10 @@ export default function MainContent() {
       <div className="main-content">
         <NumberDisplay value="01" />
         <div className="main-images">
-          <img src="src/assets/desktop/image-woman-in-videocall.jpg" />
-          <img src="src/assets/desktop/image-women-videochatting.jpg" />
-          <img src="src/assets/desktop/image-men-in-meeting.jpg" />
-          <img src="src/assets/desktop/image-man-texting.jpg" />
+          <img src={womanInVideocall} />
+          <img src={womenVideochatting} />
+          <img src={menInMeeting} />
+          <img src={manTexting} />
         </div>
         <div className="main-text-content">
           <div className="main-title">

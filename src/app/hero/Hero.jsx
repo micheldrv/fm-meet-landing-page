@@ -1,16 +1,19 @@
 import "./Hero.scss";
 import Button from "../../shared/button/Button";
+import hero from "../../assets/tablet/image-hero.png";
+import heroLeft from "../../assets/desktop/image-hero-left.png";
+import heroRight from "../../assets/desktop/image-hero-left.png";
 
 export default function Hero() {
   return (
     <>
       <div className="hero">
         <div className="hero-image">
-          <img src="src/assets/tablet/image-hero.png" alt="" />
+          <img src={hero} alt="" />
         </div>
         <div className="hero-content-grid">
           <div className="hero-image-left">
-            <img src="src/assets/desktop/image-hero-left.png" alt="" />
+            <img src={heroLeft} alt="" />
           </div>
           <div className="hero-content">
             <h1>
@@ -28,7 +31,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="hero-image-right">
-            <img src="src/assets/desktop/image-hero-right.png" alt="" />
+            <img src={heroRight} alt="" />
           </div>
         </div>
       </div>

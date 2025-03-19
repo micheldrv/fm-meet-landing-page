@@ -1,9 +1,10 @@
 import "./Header.scss";
+import logo from "../../assets/logo.svg";
 
 export default function Header() {
   return (
     <header>
-      <img src="src/assets/logo.svg"></img>;
+      <img src={logo}></img>;
     </header>
   );
 }
