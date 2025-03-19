@@ -2,7 +2,7 @@ import "./Hero.scss";
 import Button from "../../shared/button/Button";
 import hero from "../../assets/tablet/image-hero.png";
 import heroLeft from "../../assets/desktop/image-hero-left.png";
-import heroRight from "../../assets/desktop/image-hero-left.png";
+import heroRight from "../../assets/desktop/image-hero-right.png";
 
 export default function Hero() {
   return (
