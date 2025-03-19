@@ -1,0 +1,44 @@
+@use "../../style/global.scss" as *;
+
+button {
+  padding: $spacing-200 $spacing-500;
+  border-radius: 29px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: $white;
+  background-color: $cyan-600;
+  transition: background-color 0.4s;
+
+  display: flex;
+  gap: $spacing-50;
+
+  .accented {
+    color: $cyan-300;
+  }
+
+  &:hover,
+  &:active {
+    background-color: #71c0d4;
+  }
+
+  &:focus {
+    outline: 3px solid $slate-900;
+  }
+
+  &.purple {
+    background-color: $purple-600;
+
+    .accented {
+      color: $purple-300;
+    }
+
+    &:hover,
+    &:active {
+      background-color: #b18bdd;
+    }
+  }
+
+  @include text-preset-5;
+}

@@ -1,0 +1,93 @@
+$cyan-600: #4d96a9;
+$cyan-300: #8fe3f9;
+$purple-600: #855fb1;
+$purple-300: #d9b8ff;
+$slate-900: #28283d;
+$slate-600: #87879d;
+$slate-300: #d1d1df;
+$white: #fafafa;
+
+$spacing-50: 4px;
+$spacing-100: 8px;
+$spacing-200: 16px;
+$spacing-300: 24px;
+$spacing-400: 32px;
+$spacing-500: 40px;
+$spacing-600: 48px;
+$spacing-700: 56px;
+$spacing-800: 64px;
+$spacing-900: 72px;
+$spacing-1000: 80px;
+$spacing-1400: 112px;
+
+$tablet-threshold: 500px;
+$desktop-threshold: 900px;
+
+@mixin column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin text-preset-1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-threshold) {
+    font-size: 48px;
+  }
+
+  @media (min-width: $desktop-threshold) {
+    font-size: 64px;
+  }
+}
+
+@mixin text-preset-2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 0;
+
+  @media (min-width: $tablet-threshold) {
+    font-size: 36px;
+  }
+
+  @media (min-width: $desktop-threshold) {
+    font-size: 40px;
+  }
+}
+
+@mixin text-preset-3 {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: 4px;
+
+  @media (min-width: $tablet-threshold) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-threshold) {
+    font-size: 16px;
+  }
+}
+
+@mixin text-preset-4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+
+  @media (min-width: $desktop-threshold) {
+    font-size: 18px;
+  }
+}
+
+@mixin text-preset-5 {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0;
+}

@@ -1,0 +1,27 @@
+@use "../../style/global.scss" as *;
+
+.number-display {
+  @include column;
+
+  .rectangle {
+    width: 1px;
+    height: 80px;
+
+    background-color: $slate-300;
+  }
+
+  .number {
+    @include column;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+    border: 1px solid $slate-300;
+    border-radius: 50%;
+
+    color: $slate-600;
+    background-color: $white;
+
+    @include text-preset-5;
+  }
+}

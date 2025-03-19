@@ -1,0 +1,115 @@
+@use "../../style/global.scss" as *;
+
+$hero-img-height: clamp(160px, 42vw, 303px);
+
+.hero {
+  @include column;
+
+  padding: $spacing-400;
+  padding-top: $spacing-800;
+
+  gap: $spacing-600;
+  overflow-x: hidden;
+}
+
+.hero-image {
+  position: relative;
+  height: $hero-img-height;
+
+  img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: $hero-img-height;
+  }
+}
+
+.hero-image-left,
+.hero-image-right {
+  display: none;
+}
+
+.hero-content {
+  @include column;
+  gap: $spacing-300;
+  max-width: 450px;
+
+  h1 {
+    color: $slate-900;
+    @include text-preset-1;
+  }
+}
+
+.hero-buttons {
+  @include column;
+  gap: $spacing-200;
+}
+
+@media (min-width: $tablet-threshold) {
+  .hero {
+    padding: $spacing-800 $spacing-400;
+    gap: $spacing-900;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-threshold) {
+  .hero {
+    padding: $spacing-800 $spacing-1000;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  .hero-content-grid {
+    min-height: 360px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $spacing-800;
+
+    position: relative;
+    max-width: 1120px;
+    width: 100%;
+  }
+
+  .hero-image-left,
+  .hero-image-right {
+    display: block;
+    position: relative;
+
+    width: 208px;
+    height: 303px;
+
+    img {
+      position: absolute;
+      height: 100%;
+    }
+  }
+
+  .hero-image-left {
+    align-self: flex-start;
+
+    img {
+      right: 0;
+    }
+  }
+
+  .hero-image-right {
+    align-self: flex-end;
+
+    img {
+      left: 0;
+    }
+  }
+
+  .hero-content {
+    gap: $spacing-400;
+    min-width: 450px;
+  }
+}

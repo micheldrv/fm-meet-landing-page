@@ -1,0 +1,78 @@
+@use "../../style/global.scss" as *;
+
+.main-content {
+  @include column;
+
+  padding: $spacing-400;
+  padding-bottom: $spacing-800;
+
+  gap: $spacing-800;
+}
+
+.main-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 144px));
+  gap: $spacing-200;
+
+  img {
+    border-radius: 8px;
+    max-width: 100%;
+  }
+}
+
+.main-text-content {
+  @include column;
+  gap: $spacing-400;
+  max-width: 504px;
+}
+
+.main-title {
+  @include column;
+  gap: $spacing-200;
+  max-width: 445px;
+
+  p {
+    color: $cyan-600;
+    text-transform: uppercase;
+
+    @include text-preset-3;
+  }
+
+  h2 {
+    color: $slate-900;
+
+    @include text-preset-2;
+  }
+}
+
+@media (min-width: $tablet-threshold) {
+  .main-content {
+    padding-top: $spacing-700;
+  }
+
+  .main-images {
+    gap: $spacing-300;
+  }
+}
+
+@media (min-width: 690px) {
+  .main-images {
+    grid-template-columns: repeat(4, minmax(144px, 160px));
+  }
+}
+
+@media (min-width: $desktop-threshold) {
+  .main-content {
+    padding: $spacing-1000;
+    padding-bottom: $spacing-900;
+  }
+
+  .main-images {
+    grid-template-columns: repeat(4, minmax(160px, 256px));
+    gap: $spacing-400;
+  }
+
+  .main-text-content {
+    max-width: 544px;
+  }
+}

@@ -1,0 +1,13 @@
+@use "../../style/global.scss" as *;
+
+header {
+  padding: $spacing-600 $spacing-1000;
+  padding-bottom: 0;
+}
+
+@media (min-width: $desktop-threshold) {
+  header {
+    padding: $spacing-1000;
+    padding-bottom: 0;
+  }
+}
